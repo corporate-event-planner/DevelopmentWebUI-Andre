@@ -4,7 +4,7 @@
     max-width: 1920px;
  header {
     background-image: url(../img/blurred-background-close-up-crowd-1449791.jpg);
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     width: @width;
    /*  height: 85px; */
       .nav-section-container {
@@ -69,4 +69,47 @@
        }
     } 
   }
+  .intro-container {
+     display: flex;
+     flex-flow: row-reverse;
+     flex-wrap: wrap;
+   margin-top: 32px;
+   width: 100%;
+   p {
+      margin: 0 auto;
+      text-justify: auto;
+      font-size: 1.2rem;
+      line-height: 1.4em;
+      width: 663px;
+   }
+  h3 {
+     justify-content: flex-start;
+     padding-left: 27px;
+     padding-top: 274px;
+     font-size: 1.2rem;
+  }
+}
 }//end of main-container;
+
+//media queries break point
+@media (max-width: 1280px) {
+	.main-container header {
+      width: 100%;
+   }
+}
+//media breakpoint for 800px
+@media (max-width: 800px) {
+   .main-container {
+      width: 100%;
+      header {
+         background-image: url(../img/blurred-background-close-up-crowd-1449791.jpg);
+      }
+      .bgImg {
+         width: 100%;
+         background-image: url(../img/blurred-background-close-up-crowd-1449791.jpg);
+         background-size: cover;  
+         background-position: 55% 0;
+      }
+   }
+}
+//media breakpoint for 600px
