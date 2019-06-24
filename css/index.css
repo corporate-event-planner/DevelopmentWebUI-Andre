@@ -153,6 +153,7 @@ table {
   width: 630px;
 }
 .main-container header .nav-section-container .nav-bar ul {
+  display: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -163,6 +164,14 @@ table {
   text-decoration: none;
   color: #fff;
   font-size: 1.5rem;
+}
+.main-container header .nav-section-container .nav-bar .Hmenu {
+  width: 65px;
+  height: 12px;
+  margin: 8px 0;
+  background: #f2efc7;
+  border-radius: 4px;
+  display: none;
 }
 .main-container section.bgImg {
   background-image: url(../img/blurred-background-close-up-crowd-1449791.jpg);
@@ -212,6 +221,31 @@ table {
   padding-top: 274px;
   font-size: 1.2rem;
 }
+.main-container h3.second-intro {
+  padding-left: 27px;
+  padding-top: 100px;
+  font-size: 1.2rem;
+}
+.main-container .first-column,
+.main-container .second-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.main-container .first-column .card-content,
+.main-container .second-column .card-content {
+  width: 425px;
+  height: 300px;
+  background: #ccc;
+  border: 1px solid #000;
+}
+.main-container footer {
+  width: 100%;
+  margin-top: 85px;
+  min-height: 450px;
+  background: #334;
+}
 @media (max-width: 1280px) {
   .main-container header {
     width: 100%;
@@ -229,5 +263,45 @@ table {
     background-image: url(../img/blurred-background-close-up-crowd-1449791.jpg);
     background-size: cover;
     background-position: 55% 0;
+  }
+  .main-container .intro-container {
+    display: inherit;
+  }
+  .main-container .intro-container h3 {
+    padding-top: 120px;
+    justify-content: inherit;
+  }
+}
+@media (max-width: 600px) {
+  .main-container {
+    width: 100%;
+  }
+  .main-container header {
+    background-image: url(../img/blurred-background-close-up-crowd-1449791.jpg);
+  }
+  .main-container header .nav-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    border: 1px solid #fff;
+  }
+  .main-container header .nav-bar ul li {
+    display: none;
+  }
+  .main-container header .Hmenu {
+    align-items: flex-end;
+    width: 100px;
+    height: 22px;
+    background: #f2efc7;
+    display: block;
+  }
+  .main-container .bgImg {
+    width: 100%;
+    background-image: url(../img/blurred-background-close-up-crowd-1449791.jpg);
+    background-size: cover;
+    background-position: 75% 0;
+  }
+  .main-container p {
+    padding: 33px 27px;
   }
 }
