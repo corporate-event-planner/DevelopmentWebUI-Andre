@@ -1,0 +1,72 @@
+//Nesting all content with in the main-container
+.main-container {
+    width: 100%;
+    max-width: 1920px;
+ header {
+    background-image: url(../img/blurred-background-close-up-crowd-1449791.jpg);
+    background-repeat: repeat-x;
+    width: @width;
+   /*  height: 85px; */
+      .nav-section-container {
+         width: 100%;
+         //border: 1px solid #fff;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         .logo {
+            background-image: url(../asset/logo.png);
+            background-repeat: no-repeat;
+            width: 194px;
+            height: 45px;
+            margin: 24px 27px;
+         }
+         .nav-bar {
+            //border: 1px solid #000;
+            width: 630px;
+            
+            ul {
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+               text-decoration: none;
+               padding: 33px 27px;
+            }
+            li a {
+               text-decoration: none;
+               color: #fff;
+               font-size: 1.5rem;
+            }
+         }
+      }
+ }
+ section.bgImg {
+   background-image: url(../img/blurred-background-close-up-crowd-1449791.jpg);
+   background-size: cover;
+   /* opacity: .8; */
+   background-blend-mode: hard-light;
+   background-repeat: no-repeat;
+   width: 100%;
+   min-height: 750px;
+   .carousel {
+      width: 80%;
+      min-height: 500px;
+      margin-top: 53px;
+      //border: 1px solid #fff;
+      margin: 0 auto;
+   }
+   .cta-button {
+      width: 120px;
+      border-radius: 8px;
+      height: 45px;
+      background: #ccc;
+      margin: 45px auto 0 auto;
+      padding: 12px 50px;
+      h3 {
+         font-size: 2rem;
+         //padding: 18px 20px;
+         padding: 0 15px;
+         color: #222;
+       }
+    } 
+  }
+}//end of main-container;
