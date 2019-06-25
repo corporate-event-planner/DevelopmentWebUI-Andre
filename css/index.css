@@ -284,8 +284,24 @@ table {
   .main-container {
     width: 100%;
   }
+  .main-container h3 {
+    margin: 8px 0 !important;
+  }
   .main-container header {
     height: 120px;
+    /* .cta-button {
+            width: 120px;
+            border-radius: 8px;
+            height: 45px;
+            background: #ccc;
+            margin: 15px auto 0 auto;
+            padding: 12px 50px;
+            h3 {
+               font-size: 2rem;
+               padding: 18px 20px;
+               padding: 0 15px;
+               color: #222;
+             }*/
   }
   .main-container header .nav-bar {
     display: none;
