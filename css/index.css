@@ -259,6 +259,7 @@ footer {
   width: 100%;
   margin-top: 85px;
   min-height: 450px;
+  color: #fff;
   background: #334;
 }
 footer .imgFooter {
@@ -293,7 +294,9 @@ footer .right-info ul {
   font-size: 1.3rem;
   padding: 12px 44px;
   margin: 0 auto;
-  justify-content: center;
+  background: #933;
+  color: #fff;
+  width: 100%;
 }
 @media (min-width: 1000px) {
   .main-container {
@@ -409,11 +412,15 @@ footer .right-info ul {
   footer .right-info ul {
     font-size: 1.1rem;
     line-height: 1.7em;
+    padding-left: 63px;
   }
   .cpyrght {
     font-size: 1.4rem;
-    width: 60%;
+    width: inherit;
     height: 22px;
+  }
+  .cpyrght h3 {
     margin: 0 0 0 15%;
+    padding: 0;
   }
 }
