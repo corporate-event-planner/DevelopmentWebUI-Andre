@@ -3,28 +3,30 @@
     width: 100%;
     max-width: 1920px;
  header {
-     background-image: url(../img/top-image.jpg);
+     //background-image: url(../img/top-image.jpg);
     background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: @width;
+    background: #000;
    /*  height: 85px; */
      
          .logo {
             background-image: url(../asset/logo.png);
             background-repeat: no-repeat;
+            //background: #000;
             width: 45%;
+            min-width: 194px;
             height: 45px;
+            display: block;
             margin: 12px 22px;
          }
-         
+        
          .nav-bar {
             width: 630px;
-            
             ul {
                display: flex;
-               flex-direction: row;
                justify-content: space-between;
                text-decoration: none;
                padding: 33px 27px;
@@ -153,7 +155,7 @@ footer {
    }
    .left-info h3, .middle-info h3, .right-info h3 {
       font-size: 1.3rem;
-      margin: 22px 0 0 100px;
+      margin: 22px 0 0 65px;
    }
    .left-info ul, .middle-info ul, .right-info ul {
       margin: 28px;
@@ -164,13 +166,15 @@ footer {
 }
 .cpyrght {
    width: 245px;
-  border: 1px solid #fff;
-  font-size: 1.3rem;
-  padding: 12px 44px;
-  margin: 0 auto;
+ font-size: 1.3rem;
   background: #933; 
-  color: #fff;
   width: 100%;
+  h3 {
+     padding:25px 35%;
+     width: 25%;
+     margin: 0 auto;
+     color: #fff;
+  }
 } 
 
 //media queries break point
