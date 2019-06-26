@@ -290,7 +290,6 @@ footer .right-info ul {
   margin-left: 22px;
 }
 .cpyrght {
-  width: 245px;
   font-size: 1.3rem;
   background: #933;
   width: 100%;
@@ -418,12 +417,10 @@ footer .right-info ul {
     padding-left: 63px;
   }
   .cpyrght {
-    font-size: 1.4rem;
-    width: inherit;
-    height: 22px;
+    font-size: 1.1rem;
+    width: 100%;
   }
   .cpyrght h3 {
-    margin: 0 0 0 15%;
-    padding: 0;
+    width: 145px;
   }
 }
