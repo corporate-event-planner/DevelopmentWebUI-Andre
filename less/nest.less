@@ -1,0 +1,341 @@
+//Nesting all content with in the main-container
+.main-container {
+    width: @width-100;
+    max-width: 1920px;
+ header {
+     background-image: url(../img/top-image.jpg);
+     background-blend-mode: color-dodge;
+     background-color: @medium-wood;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: @width-100;
+    //background: #000;
+   /*  height: 85px; */
+     
+         .logo {
+            background-image: url(../asset/logo_dark.png);
+            background-repeat: no-repeat;
+            //background: #000;
+            width: 45%;
+            min-width: 194px;
+            height: @height-45;
+            display: block;
+            margin: 12px 22px;
+         }
+        
+         .nav-bar {
+            width: 630px;
+            ul {
+               display: flex;
+               justify-content: space-between;
+               text-decoration: none;
+               padding: 33px 27px;
+            }
+            li a {
+               text-decoration: none;
+               color: #1e0c02;
+               font-size: 1.5rem;
+            }
+         }
+           //Hamburger menu
+           .menu {
+              display: none;
+              height: 39px;
+              margin: 12px 0 0 0;
+            .Hmenu {
+               width: 55px;
+               height: 8px;
+               margin: 2px 0;
+               background: #f2efc7;
+               border-radius: 4px;
+               cursor: pointer;
+            }
+      }
+ }
+ section.bgImg {
+   background-image: url(../img/blurred-background-close-up-crowd-1449791.jpg);
+   background-size: cover;
+   background-color: @medium-wood;
+   background-blend-mode: color-dodge;
+   background-repeat: no-repeat;
+   width: @width-100;
+   min-height: 750px;
+   .carousel {
+      width: 80%;
+      min-height: 500px;
+      margin-top: 53px;
+      //border: 1px solid #fff;
+      margin: 0 auto;
+   }
+   .cta-button {
+      width: 120px;
+      border-radius: 8px;
+      height: @height-45;
+      background: @seaShell;
+      margin: 45px auto 0 auto;
+      cursor: pointer;
+      padding: 12px 50px;
+      h3 {
+         font-size: 2rem;
+         //padding: 18px 20px;
+         padding: 0 15px;
+         color: #222;
+       }
+    } 
+  }
+  .intro-container {
+     display: flex;
+     flex-flow: row-reverse;
+     flex-wrap: wrap;
+   margin-top: 32px;
+   width: @width-100;
+   p {
+      margin: 0 auto;
+      text-justify: justify;
+      font-size: @fonts1-2;
+      line-height: 1.4em;
+      padding: 0 44px;
+      width: 50%;
+   }
+  
+   }
+   h3.first-title,  h3.second-title, h3.third-title {
+      //justify-content: flex-start;
+      margin-left: 50px;
+      padding-top: -188px;
+      font-size: @fonts1-4;
+      font-weight: @bold;
+       }
+         h3.second-title, h3.third-title {
+            padding-top: 45px;
+            font-size: @fonts1-4;
+            font-weight: @bold;
+         }
+        .first-column, .second-column, .third-column {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+         flex-wrap: wrap;
+         width: @width-100;
+     .card-content {
+      width: 425px;
+      height: 300px;
+      background: @dbl-spanish-white;
+      //border: 1px solid #000;
+      padding: 12px 14px;
+      line-height: 1.5em;
+      h3 {
+         font-weight: @bold;
+         font-size: @fonts1-1;
+         margin-bottom: 8px;
+         }
+         img.icon, img.conf {
+           width: 115px;
+           height: 85px;
+           margin: -19px 0 0 275px;
+        }
+        img.trade {
+         width: 115px;
+         height: 115px;
+         margin: -19px 0 0 275px;
+
+        }
+      }
+   
+      //about page cards
+      .about-content {
+         width: 340px;
+         padding-left: 85px;
+         border: 2px solid blue;
+      }
+      h2 {
+         padding: 22px 0;
+         font-weight: @bold;
+      }
+   }
+  
+}//end of main-container;
+footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* flex-flow: row; */
+   /* flex-wrap: wrap; */
+   width: @width-100;
+   margin-top: 85px;
+   min-height: 450px;
+   color: #fff;
+   background: @dbl-spanish-white;
+   .imgFooter {
+      width: 24%;
+      height: @height-45;
+      margin-top: -333px;
+   }
+   .left-info, .middle-info, .right-info {
+      margin-top: 20px;
+      //padding: 20px 0 0 70px;
+     width: 24%;
+     height: 400px;
+     //border: 1px solid #000;
+   }
+   .left-info h3, .middle-info h3, .right-info h3 {
+      font-size: @font1-3;
+      margin: 22px 0 0 65px;
+   }
+   .left-info ul, .middle-info ul, .right-info ul {
+      margin: 28px;
+      font-size: @font1-3;
+      line-height: 1.9em;
+      margin-left: 22px;
+   }
+}
+.cpyrght {
+   //width: 245px;
+ font-size: @font1-3;
+  background: #933; 
+  width: @width-100;
+  h3 {
+     padding:25px 35%;
+     width: 25%;
+     margin: 0 auto;
+     color: #fff;
+  }
+} 
+
+//media queries break point
+@media (min-width: 1000px) {
+	.main-container {
+      width: @width-100;
+      .intro-container p {
+         margin-left: 25%;
+         height: 270px;
+      }
+      
+   }
+}
+//media breakpoint for 500px
+@media (max-width: 500px) {
+   .main-container {
+      width: @width-100;
+      header {
+         height: 120px;
+         .nav-bar {
+           display: none;
+           //width: 55px;
+         }
+         .menu {
+           display: flex;
+           flex-direction: column;
+           margin-right: 28px;
+            .Hmenu {
+               display: block;
+            }
+         }
+      
+      } 
+      .cta-button {
+         /* width: 120px;
+         border-radius: 8px;
+         height: @height-45;
+         background: #ccc; */
+         margin: 8px auto 0 auto;
+         /* padding: 12px 50px; */
+         h3 {
+            font-size: 2rem;
+            padding: 18px 20px;
+            margin: 8px 0;
+            color: #222;
+             }
+          }
+      .bgImg {
+         width: @width-100;
+         background-image: url(../img/blurred-background-close-up-crowd-1449791.jpg);
+         background-size: cover;  
+         background-position: 55% 0;
+      }
+      .intro-container {
+         display: inherit;
+         h3 {
+            font-size: @fonts1-4;
+            font-weight: @bold;
+            padding: 22px 0 28px 27px; 
+         justify-content: inherit;
+         }
+         p {
+            padding: 0 27px;
+            width: 88%;
+         }
+      }
+      .first-column {
+         display: flex;
+         flex-wrap: wrap;
+         h2:first-child {
+            margin-top: -22px;
+         }
+         .first-cards h2 {
+            margin: 22px 0;
+         }
+         .card-content {
+            padding: 12px 14px;
+            h3 {
+               margin-top: -8px;
+            }
+         }
+      }
+
+     h3 {
+        font-size: @fonts1-4;
+        font-weight: @bold;
+        margin: 44px 0;
+        padding-top: 2px;
+     }
+     .second-column {
+      h2 {
+         margin: 22px 0;
+      }
+     /*  .card-content {
+         padding: 12px 8px;
+      } */
+     }
+   }
+   footer {
+      /*  display: flex; */
+      flex: 1;
+       flex-direction: column;
+       justify-content: center;
+       //border: 1px solid red;
+       .imgFooter {
+         width: 24%;
+         height: @height-45;
+         margin: 12px 55px 0 0;
+       }
+       .left-info, .middle-info, .right-info {
+         //padding: 20px 0 0 70px;
+         width: 450px;
+        height: 200px;
+        //border: 1px solid red;
+      }
+      .right-info:last-child {
+         margin-bottom: 22px;
+      }
+       .left-info h3, .middle-info h3, .right-info h3 {
+          font-size: @fonts1-2;
+       }
+       .left-info ul, .middle-info ul, .right-info ul {
+          font-size: @fonts1-1;
+          line-height: 1.7em;
+          padding-left: 63px;
+       }
+    }
+     .cpyrght {
+       font-size: @fonts1-1;
+       width: @width-100;
+       h3 {
+          width: 145px; 
+          //margin-right: 75px;
+          //border: 1px solid #000;
+       }
+    }
+}
