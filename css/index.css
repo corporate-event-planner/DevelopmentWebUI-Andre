@@ -131,16 +131,18 @@ table {
   max-width: 1920px;
 }
 .main-container header {
+  background-image: url(../img/top-image.jpg);
+  background-blend-mode: color-dodge;
+  background-color: #9f7e69;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  background: #000;
   /*  height: 85px; */
 }
 .main-container header .logo {
-  background-image: url(../asset/logo.png);
+  background-image: url(../asset/logo_dark.png);
   background-repeat: no-repeat;
   width: 45%;
   min-width: 194px;
@@ -159,7 +161,7 @@ table {
 }
 .main-container header .nav-bar li a {
   text-decoration: none;
-  color: #fff;
+  color: #1e0c02;
   font-size: 1.5rem;
 }
 .main-container header .menu {
@@ -178,8 +180,8 @@ table {
 .main-container section.bgImg {
   background-image: url(../img/blurred-background-close-up-crowd-1449791.jpg);
   background-size: cover;
-  /* opacity: .8; */
-  background-blend-mode: hard-light;
+  background-color: #9f7e69;
+  background-blend-mode: color-dodge;
   background-repeat: no-repeat;
   width: 100%;
   min-height: 750px;
@@ -194,8 +196,9 @@ table {
   width: 120px;
   border-radius: 8px;
   height: 45px;
-  background: #ccc;
+  background: #ffeee2;
   margin: 45px auto 0 auto;
+  cursor: pointer;
   padding: 12px 50px;
 }
 .main-container section.bgImg .cta-button h3 {
@@ -246,8 +249,7 @@ table {
 .main-container .third-column .card-content {
   width: 425px;
   height: 300px;
-  background: #ccc;
-  border: 1px solid #000;
+  background: #d2bba0;
   padding: 12px 14px;
   line-height: 1.5em;
 }
@@ -298,7 +300,7 @@ footer {
   margin-top: 85px;
   min-height: 450px;
   color: #fff;
-  background: #334;
+  background: #d2bba0;
 }
 footer .imgFooter {
   width: 24%;
@@ -367,7 +369,7 @@ footer .right-info ul {
   .main-container .cta-button {
     /* width: 120px;
          border-radius: 8px;
-         height: 45px;
+         height: @height-45;
          background: #ccc; */
     margin: 8px auto 0 auto;
     /* padding: 12px 50px; */
@@ -410,16 +412,22 @@ footer .right-info ul {
   .main-container .first-column .card-content {
     padding: 12px 14px;
   }
+  .main-container .first-column .card-content h3 {
+    margin-top: -8px;
+  }
   .main-container h3 {
     font-size: 1.4rem;
     font-weight: bold;
     margin: 44px 0;
+    padding-top: 2px;
+  }
+  .main-container .second-column {
+    /*  .card-content {
+         padding: 12px 8px;
+      } */
   }
   .main-container .second-column h2 {
     margin: 22px 0;
-  }
-  .main-container .second-column .card-content {
-    padding: 12px 14px;
   }
   footer {
     /*  display: flex; */
