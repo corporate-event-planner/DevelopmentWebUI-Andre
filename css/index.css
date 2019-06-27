@@ -251,15 +251,42 @@ table {
   padding: 12px 14px;
   line-height: 1.5em;
 }
+.main-container .first-column .card-content h3,
+.main-container .second-column .card-content h3,
+.main-container .third-column .card-content h3 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.main-container .first-column .card-content img.icon,
+.main-container .second-column .card-content img.icon,
+.main-container .third-column .card-content img.icon,
+.main-container .first-column .card-content img.conf,
+.main-container .second-column .card-content img.conf,
+.main-container .third-column .card-content img.conf {
+  width: 115px;
+  height: 85px;
+  margin: -19px 0 0 275px;
+}
+.main-container .first-column .card-content img.trade,
+.main-container .second-column .card-content img.trade,
+.main-container .third-column .card-content img.trade {
+  width: 115px;
+  height: 115px;
+  margin: -19px 0 0 275px;
+}
 .main-container .first-column .about-content,
 .main-container .second-column .about-content,
 .main-container .third-column .about-content {
-  margin-left: 55px;
+  width: 340px;
+  padding-left: 85px;
+  border: 2px solid blue;
 }
 .main-container .first-column h2,
 .main-container .second-column h2,
 .main-container .third-column h2 {
   padding: 22px 0;
+  font-weight: bold;
 }
 footer {
   display: flex;
