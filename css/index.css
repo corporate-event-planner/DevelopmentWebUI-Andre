@@ -256,6 +256,14 @@ table {
   padding: 12px 14px;
   line-height: 1.5em;
 }
+.main-container .first-column .card-content .icons,
+.main-container .second-column .card-content .icons,
+.main-container .third-column .card-content .icons {
+  border: 1px solid #000;
+  width: 100px;
+  height: 200px;
+  margin-top: 55px;
+}
 .main-container .first-column .card-content h3,
 .main-container .second-column .card-content h3,
 .main-container .third-column .card-content h3 {
