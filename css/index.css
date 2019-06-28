@@ -153,6 +153,16 @@ table {
 }
 .main-container header .nav-bar {
   width: 630px;
+  /* .toggle {
+               display: none;
+               text-align: right;
+               width: 100%;
+               display: block;
+               i {
+                  display: none;
+                  margin-right: 22px;
+               }
+            } */
 }
 .main-container header .nav-bar ul {
   display: flex;
@@ -164,14 +174,6 @@ table {
   text-decoration: none;
   color: #1e0c02;
   font-size: 1.5rem;
-}
-.main-container header .nav-bar .toggle {
-  text-align: right;
-  width: 100%;
-  display: block;
-}
-.main-container header .nav-bar .toggle i {
-  margin-right: 22px;
 }
 .main-container section.bgImg {
   background: linear-gradient(#d2bba0, #ffeee2);
@@ -256,14 +258,6 @@ table {
   padding: 12px 14px;
   line-height: 1.5em;
 }
-.main-container .first-column .card-content .icons,
-.main-container .second-column .card-content .icons,
-.main-container .third-column .card-content .icons {
-  border: 1px solid #000;
-  width: 100px;
-  height: 200px;
-  margin-top: 55px;
-}
 .main-container .first-column .card-content h3,
 .main-container .second-column .card-content h3,
 .main-container .third-column .card-content h3 {
@@ -293,6 +287,33 @@ table {
   width: 115px;
   height: 115px;
   margin: -19px 0 0 275px;
+}
+.main-container .first-column .first-cards,
+.main-container .second-column .first-cards,
+.main-container .third-column .first-cards {
+  position: relative;
+}
+.main-container .first-column .first-cards .icons,
+.main-container .second-column .first-cards .icons,
+.main-container .third-column .first-cards .icons {
+  position: absolute;
+  top: 111px;
+  left: 312px;
+}
+.main-container .first-column .first-cards .fa-github-square,
+.main-container .second-column .first-cards .fa-github-square,
+.main-container .third-column .first-cards .fa-github-square,
+.main-container .first-column .first-cards .fa-linkedin,
+.main-container .second-column .first-cards .fa-linkedin,
+.main-container .third-column .first-cards .fa-linkedin {
+  font-size: 285%;
+  color: blue;
+  cursor: pointer;
+}
+.main-container .first-column .first-cards .fa-linkedin,
+.main-container .second-column .first-cards .fa-linkedin,
+.main-container .third-column .first-cards .fa-linkedin {
+  top: 185px;
 }
 footer {
   display: flex;
@@ -478,6 +499,21 @@ footer .right-info ul {
   .main-container .second-column .card-content h3,
   .main-container .third-column .card-content h3 {
     margin-top: -8px;
+  }
+  .main-container .first-column .first-cards .fa-github-square,
+  .main-container .second-column .first-cards .fa-github-square,
+  .main-container .third-column .first-cards .fa-github-square,
+  .main-container .first-column .first-cards .fa-linkedin,
+  .main-container .second-column .first-cards .fa-linkedin,
+  .main-container .third-column .first-cards .fa-linkedin {
+    position: absolute;
+    top: 101px;
+  }
+  .main-container .first-column .first-cards .fa-linkedin,
+  .main-container .second-column .first-cards .fa-linkedin,
+  .main-container .third-column .first-cards .fa-linkedin {
+    position: absolute;
+    top: 115px;
   }
   .main-container .third-column .be h2 {
     padding: 12px 0;

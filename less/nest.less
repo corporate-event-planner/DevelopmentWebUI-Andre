@@ -39,14 +39,16 @@
                font-size: 1.5rem;
             }
             //Hamburger menu
-            .toggle {
+             /* .toggle {
+               display: none;
                text-align: right;
                width: 100%;
                display: block;
                i {
+                  display: none;
                   margin-right: 22px;
                }
-            }
+            } */
          }
  }
  section.bgImg {
@@ -126,13 +128,6 @@
       //border: 1px solid #000;
       padding: 12px 14px;
       line-height: 1.5em;
-      .icons {
-         //margin-top: 22px;
-         border: 1px solid #000;
-         width: 100px;
-         height: 200px;
-         margin-top: 55px;
-      }
       
       h3 {
          font-weight: @bold;
@@ -155,6 +150,24 @@
 
         }
       }
+      .first-cards {
+         position: relative;
+         .icons {
+            //margin-top: 22px;
+            position: absolute;
+            top: 111px;
+            left: 312px;
+         }
+         .fa-github-square, .fa-linkedin {
+            font-size: 285%;
+            color: blue;
+            cursor: pointer;
+         }
+         .fa-linkedin {
+            top: 185px;
+         }
+      }
+      
    }
   
 }//end of main-container;
@@ -320,6 +333,16 @@ footer {
             padding: 12px 14px;
             h3 {
                margin-top: -8px;
+            }
+         }
+         .first-cards {
+            .fa-github-square, .fa-linkedin {
+               position: absolute;
+               top: 101px;
+            }
+            .fa-linkedin {
+             position: absolute;
+              top: 115px;
             }
          }
       }

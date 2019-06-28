@@ -23,3 +23,15 @@ let special = document.querySelector('.first-column .about-content');
 window.addEventListener('load', (sp) => {
    special.style.border = '3px solid purple';
 });
+
+let social_media = {
+    andre: 'https://github.com/',
+    priyanka: 'https://github.com/'
+}
+let member1 = document.querySelector('.fa-github-square');
+member1.addEventListener('click', () => {
+     window.location.href = `${social_media.andre('AwDesign71')}`;
+});
+
+let convert = Array.from(member1);
+console.log(convert);
