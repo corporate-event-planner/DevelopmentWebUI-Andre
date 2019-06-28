@@ -15,6 +15,7 @@ overEvent.forEach((items) => {
 
 
 let cta = document.querySelector('.cta-button h3');
-cta.addEventListener('click', (action) => {
-    action.target.location.href = 'google.com'
+cta.addEventListener('click', function() {
+    window.location.href = 'https://corporate-event-planner.netlify.com/login';
 });
+
