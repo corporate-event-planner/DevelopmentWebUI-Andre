@@ -19,3 +19,7 @@ cta.addEventListener('click', function() {
     window.location.href = 'https://corporate-event-planner.netlify.com/login';
 });
 
+let special = document.querySelector('.first-column .about-content');
+window.addEventListener('load', (sp) => {
+   special.style.border = '3px solid purple';
+});
